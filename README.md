@@ -4,9 +4,9 @@
 
 ### ToDoApi (ASP.NET Core)
 
-- **Api projesi
+-**Api projesi
 
 ### todo-client (React)
 
-- **React uygulamasında, API çağırımları yapılmaktadır.
+-**React uygulamasında, API çağırımları yapılmaktadır.
 
