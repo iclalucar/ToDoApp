@@ -1,0 +1,41 @@
+version: '3.4'
+
+networks:
+  dev:
+    driver: bridge
+
+services:
+  sqldata:
+    image: mcr.microsoft.com/azure-sql-edge
+    environment:
+      - MSSQL_USER=SA
+      - MSSQL_SA_PASSWORD=reallyStrongPwd123
+      - ACCEPT_EULA=1
+    ports:
+      - "1433:1433"
+    networks:
+      - dev
+
+  todoapi:
+    image: ${DOCKER_REGISTRY-}todoapi
+    build:
+      context: .
+      dockerfile: ToDoApi/Dockerfile
+    ports:
+      - "5285:80"
+    depends_on:
+      - sqldata
+    networks:
+      - dev
+
+  reactapp:
+    image: ${DOCKER_REGISTRY-}reactapp
+    build:
+      context: .
+      dockerfile: todo-client/Dockerfile
+    ports:
+      - "5173:5173"
+    depends_on:
+      - todoapi
+    networks:
+      - dev

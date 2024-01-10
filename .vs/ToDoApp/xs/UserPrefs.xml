@@ -1,0 +1,33 @@
+﻿<Properties StartupConfiguration="{0471704A-2964-43D9-BACA-2E805479452B}|http">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <Debugger.DebugSourceFolders />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.docker-compose PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="ToDoApi/Dockerfile">
+    <Files>
+      <File FileName="ToDoApi/Dockerfile" Line="22" Column="1" />
+      <File FileName="docker-compose.yml" />
+      <File FileName="ToDoApi/Controllers/UserController.cs" />
+      <File FileName="ToDoApi/Models/ToDoItem.cs" />
+      <File FileName="ToDoApi/Models/User.cs" />
+      <File FileName="ToDoApi/appsettings.json" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="ToDoApp" expanded="True">
+            <Node name="docker-compose" expanded="True" />
+            <Node name="ToDoApi" expanded="True">
+              <Node name="Migrations" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.ToDoApi PreferredExecutionTarget="/Applications/Google Chrome.app" />
+</Properties>
